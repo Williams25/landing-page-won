@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-import Heading from 'components/Heading'
-import Container from 'components/Container'
+import Heading from "components/Heading";
+import Container from "components/Container";
 
-import * as S from './styles'
+import * as S from "./styles";
 
 const SectionAboutProject = () => (
   <S.Wrapper>
@@ -11,12 +11,15 @@ const SectionAboutProject = () => (
       <S.Container>
         <S.Image>
           <source
-            srcSet={require('@images/project.png?webp')}
+            srcSet={require("../../images/project.png?webp")}
             type="image/webp"
           />
-          <source srcSet={require('@images/project.png')} type="image/png" />
+          <source
+            srcSet={require("../../images/project.png")}
+            type="image/png"
+          />
           <img
-            src={require('@images/project.png')}
+            src={require("../../images/project.png")}
             loading="lazy"
             alt="Tela do ecommerce com uma imagem do CMS por trás"
           />
@@ -31,7 +34,7 @@ const SectionAboutProject = () => (
             </p>
 
             <p>
-              Teremos também um <strong>CMS completamente customizado</strong>{' '}
+              Teremos também um <strong>CMS completamente customizado</strong>{" "}
               para que os administradores possam adicionar produtos, categorias,
               plataformas, criar promoções, editar partes do site, além de
               emails automatizados para às vendas de cada produto.
@@ -40,7 +43,7 @@ const SectionAboutProject = () => (
             <p>
               Para criar tudo isso, iremos utilizar ferramentas muito famosas no
               mercado de trabalho, como ReactJS, Next, Apollo e outras coisas
-              mais. Sempre prezando pela qualidade do código, ou seja, teremos{' '}
+              mais. Sempre prezando pela qualidade do código, ou seja, teremos{" "}
               <strong>testes em tudo!</strong>
             </p>
           </S.Text>
@@ -48,6 +51,6 @@ const SectionAboutProject = () => (
       </S.Container>
     </Container>
   </S.Wrapper>
-)
+);
 
-export default SectionAboutProject
+export default SectionAboutProject;

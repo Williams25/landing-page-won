@@ -1,28 +1,28 @@
-import React from 'react'
+import React from "react";
 
-import { GrGithub } from 'react-icons/gr'
-import { FaDribbble, FaTwitter } from 'react-icons/fa'
+import { GrGithub } from "react-icons/gr";
+import { FaDribbble, FaTwitter } from "react-icons/fa";
 
-import * as S from './styles'
+import * as S from "./styles";
 
 const icons = {
   twitter: <FaTwitter />,
   github: <GrGithub />,
   dribbble: <FaDribbble />
-}
+};
 
 type socialLinks = {
-  slug: string
-  link: string
-}
+  slug: string;
+  link: string;
+};
 
 type Props = {
-  name: string
-  role: string
-  image: string
-  socialLinks: socialLinks[]
-  description: string
-}
+  name: string;
+  role: string;
+  image: string;
+  socialLinks: socialLinks[];
+  description: string;
+};
 
 const ProfileCard: React.FC<Props> = ({
   name,
@@ -34,12 +34,15 @@ const ProfileCard: React.FC<Props> = ({
   <S.Card key={name}>
     <S.Image>
       <source
-        srcSet={require(`@images/authors/${image}?webp`)}
+        srcSet={require(`../../images/authors/${image}?webp`)}
         type="image/webp"
       />
-      <source srcSet={require(`@images/authors/${image}`)} type="image/png" />
+      <source
+        srcSet={require(`../../images/authors/${image}`)}
+        type="image/png"
+      />
       <img
-        src={require(`@images/authors/${image}`)}
+        src={require(`../../images/authors/${image}`)}
         loading="lazy"
         alt={name}
       />
@@ -57,6 +60,6 @@ const ProfileCard: React.FC<Props> = ({
     </S.SocialLinks>
     <S.Description>{description}</S.Description>
   </S.Card>
-)
+);
 
-export default ProfileCard
+export default ProfileCard;

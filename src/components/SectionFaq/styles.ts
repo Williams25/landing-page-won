@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
+import styled, { css } from "styled-components";
+import media from "styled-media-query";
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
@@ -7,15 +7,15 @@ export const Wrapper = styled.div`
     color: ${theme.colors.texts};
     transform: skewY(4deg);
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan("medium")`
       padding-bottom: ${theme.spacings.xxlarge};
     `}
   `}
-`
+`;
 
 export const Content = styled.div`
   transform: skewY(-4deg);
-`
+`;
 
 export const Questions = styled.div`
   ${({ theme }) => css`
@@ -24,14 +24,14 @@ export const Questions = styled.div`
     grid-row-gap: ${theme.spacings.medium};
     margin-top: ${theme.spacings.medium};
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan("medium")`
       grid-template-columns: 1fr 1fr;
       grid-column-gap: ${theme.spacings.medium};
       grid-row-gap: ${theme.spacings.large};
       margin-top: ${theme.spacings.xlarge};
     `}
   `}
-`
+`;
 
 export const Question = styled.div`
   ${({ theme }) => css`
@@ -41,7 +41,7 @@ export const Question = styled.div`
       border-bottom: 1px solid ${theme.colors.primary};
     }
   `}
-`
+`;
 
 export const ExtraQuestion = styled.div`
   ${({ theme }) => css`
@@ -53,8 +53,8 @@ export const ExtraQuestion = styled.div`
       text-decoration: none;
     }
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan("medium")`
       margin-top: ${theme.spacings.xlarge};
     `}
   `}
-`
+`;

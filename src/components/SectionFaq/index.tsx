@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
-import Container from 'components/Container'
-import Heading from 'components/Heading'
+import Container from "components/Container";
+import Heading from "components/Heading";
 
-import faq from './content'
-import * as S from './styles'
+import faq from "./content";
+import * as S from "./styles";
 
 const SectionFaq = () => (
   <S.Wrapper>
@@ -24,15 +24,15 @@ const SectionFaq = () => (
         <S.ExtraQuestion>
           <Heading lineBottom>Eu tenho outra dúvida!</Heading>
           <p>
-            Sem problemas! Você pode acessar qualquer uma das{' '}
+            Sem problemas! Você pode acessar qualquer uma das{" "}
             <a
               href="https://willianjusten.com.br/about"
               target="_blank"
               rel="noreferrer"
             >
               minhas redes sociais
-            </a>{' '}
-            ou entrar no{' '}
+            </a>{" "}
+            ou entrar no{" "}
             <a href="http://bit.ly/slack-will" target="_blank" rel="noreferrer">
               slack do nosso curso.
             </a>
@@ -41,6 +41,6 @@ const SectionFaq = () => (
       </Container>
     </S.Content>
   </S.Wrapper>
-)
+);
 
-export default SectionFaq
+export default SectionFaq;

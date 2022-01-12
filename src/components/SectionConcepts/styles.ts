@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
+import styled, { css } from "styled-components";
+import media from "styled-media-query";
 
 export const Box = styled.section`
   ${({ theme }) => css`
@@ -8,26 +8,26 @@ export const Box = styled.section`
     padding: ${theme.spacings.small};
     border-radius: ${theme.border.radius};
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan("medium")`
       padding: ${theme.spacings.large};
     `}
   `}
-`
+`;
 
 export const List = styled.ul`
   ${({ theme }) => css`
     padding: ${theme.spacings.small} 0 0;
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan("medium")`
       padding: ${theme.spacings.small} ${theme.spacings.xsmall} 0;
       column-count: 2;
     `}
 
-    ${media.greaterThan('large')`
+    ${media.greaterThan("large")`
       column-count: 3;
     `}
   `}
-`
+`;
 
 export const Item = styled.li`
   ${({ theme }) => css`
@@ -36,7 +36,7 @@ export const Item = styled.li`
     padding-left: ${theme.spacings.small};
 
     &::after {
-      content: ' ';
+      content: " ";
       position: absolute;
       width: 0.9rem;
       height: 0.9rem;
@@ -50,4 +50,4 @@ export const Item = styled.li`
       margin-bottom: ${theme.spacings.xsmall};
     }
   `}
-`
+`;

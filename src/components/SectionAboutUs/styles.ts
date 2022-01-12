@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
+import styled, { css } from "styled-components";
+import media from "styled-media-query";
 
 export const Content = styled.div`
   ${({ theme }) => css`
@@ -8,8 +8,8 @@ export const Content = styled.div`
     grid-template-columns: 1fr;
     margin-top: ${theme.spacings.medium};
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan("medium")`
       grid-template-columns: repeat(3, 1fr);
     `}
   `}
-`
+`;

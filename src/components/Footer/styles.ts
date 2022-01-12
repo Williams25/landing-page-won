@@ -1,5 +1,5 @@
-import styled, { css } from 'styled-components'
-import media from 'styled-media-query'
+import styled, { css } from "styled-components";
+import media from "styled-media-query";
 
 export const Wrapper = styled.footer`
   ${({ theme }) => css`
@@ -12,7 +12,7 @@ export const Wrapper = styled.footer`
     z-index: 2;
     margin-top: -${theme.spacings.medium};
 
-    ${media.greaterThan('medium')`
+    ${media.greaterThan("medium")`
       font-size: ${theme.font.sizes.small};
       margin-top: -${theme.spacings.xxlarge};
       padding-bottom: ${theme.spacings.large};
@@ -24,4 +24,4 @@ export const Wrapper = styled.footer`
       border-bottom: 1px solid ${theme.colors.primary};
     }
   `}
-`
+`;

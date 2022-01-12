@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from "styled-components";
 
 export const Content = styled.section`
   ${({ theme }) => css`
@@ -48,7 +48,7 @@ export const Content = styled.section`
     .slick-track:after,
     .slick-track:before {
       display: table;
-      content: '';
+      content: "";
     }
 
     .slick-track:after {
@@ -111,4 +111,4 @@ export const Content = styled.section`
       }
     }
   `}
-`
+`;

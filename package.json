@@ -35,6 +35,8 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
+    "@apollo/client": "^3.5.7",
+    "graphql": "^16.2.0",
     "graphql-request": "^3.7.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",

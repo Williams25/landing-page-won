@@ -1,6 +1,7 @@
 export type LandingPageProps = {
   logo: LogoProps;
   header: HeaderProps;
+  sectionAboutProject: SectionAboutProjectProps;
 };
 
 export type LogoProps = {
@@ -17,5 +18,11 @@ export type HeaderProps = {
   title: string;
   description: string;
   button: ButtonProps;
+  image: LogoProps;
+};
+
+export type SectionAboutProjectProps = {
+  title: string;
+  description: string;
   image: LogoProps;
 };

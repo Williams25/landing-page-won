@@ -16,10 +16,14 @@ import Footer from "components/Footer";
 import JsonSchema from "components/JsonSchema";
 import { LandingPageProps } from "../types/api";
 
-const Index = ({ logo, header }: LandingPageProps) => (
+const Index = ({ logo, header, sectionAboutProject }: LandingPageProps) => (
   <>
     <SectionHero logo={logo} header={header} />
-    <SectionAboutProject />
+    <SectionAboutProject
+      description={sectionAboutProject.description}
+      image={sectionAboutProject.image}
+      title={sectionAboutProject.title}
+    />
     <SectionTech />
     <SectionConcepts />
     <SectionModules />

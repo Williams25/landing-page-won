@@ -14,10 +14,11 @@ import SectionReviews from "components/SectionReviews";
 import SectionFaq from "components/SectionFaq";
 import Footer from "components/Footer";
 import JsonSchema from "components/JsonSchema";
+import { LandingPageProps } from "../types/api";
 
-const Index = () => (
+const Index = ({ logo }: LandingPageProps) => (
   <>
-    <SectionHero />
+    <SectionHero logo={logo} />
     <SectionAboutProject />
     <SectionTech />
     <SectionConcepts />
@@ -36,7 +37,7 @@ export default Index;
 
 export const getStaticProps: GetStaticProps = async () => {
   const { landingPage } = await client.request(GET_LANDING_PAGE);
-  console.log(landingPage);
+
   return {
     props: {
       ...landingPage

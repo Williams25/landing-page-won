@@ -3,6 +3,7 @@ export type LandingPageProps = {
   header: HeaderProps;
   sectionAboutProject: SectionAboutProjectProps;
   sectionTech: SectionTechProps;
+  sectionConcepts: SectionConceptsProps;
 };
 
 export type LogoProps = {
@@ -35,5 +36,12 @@ export type SectionTechProps = {
     icon: {
       url: string;
     }[];
+  }[];
+};
+
+export type SectionConceptsProps = {
+  title: string;
+  conceps: {
+    title: string;
   }[];
 };

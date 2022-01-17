@@ -5,6 +5,7 @@ export type LandingPageProps = {
   sectionTech: SectionTechProps;
   sectionConcepts: SectionConceptsProps;
   sectionModules: SectionModulesProps;
+  sectionAgenda: SectionAgendaProps;
 };
 
 export type LogoProps = {
@@ -54,4 +55,9 @@ export type SectionModulesProps = {
     subTitle: string;
     description: string;
   }[];
+};
+
+export type SectionAgendaProps = {
+  title: string;
+  description: string;
 };

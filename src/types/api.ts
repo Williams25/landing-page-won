@@ -82,6 +82,6 @@ export type SectionAboutUsProps = {
     socialLinks: {
       title: string;
       url: string;
-    };
+    }[];
   }[];
 };

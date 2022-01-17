@@ -77,6 +77,15 @@ export const GET_LANDING_PAGE = /* GraphQL */ `
     }
   }
 
+  fragment pricingBox on LandingPage {
+    totalPrice
+    numberInstallments
+    priceInstallment
+    button {
+      ...button
+    }
+  }
+
   query GET_LANDING_PAGE {
     landingPage {
       ...logo

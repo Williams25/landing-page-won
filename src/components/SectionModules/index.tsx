@@ -4,16 +4,16 @@ import Heading from "components/Heading";
 import Container from "components/Container";
 import CardModule from "components/CardModule";
 
-import content from "./content";
 import * as S from "./styles";
+import { SectionModulesProps } from "types/api";
 
-const SectionModules = () => (
+const SectionModules = ({ modules, title }: SectionModulesProps) => (
   <Container>
-    <Heading reverseColor>Módulos deste curso</Heading>
+    <Heading reverseColor>{title}</Heading>
 
     <S.Content>
-      {content.map(({ title, subtitle, description }, index) => (
-        <CardModule key={index} title={title} subTitle={subtitle}>
+      {modules.map(({ title, subTitle, description }, index) => (
+        <CardModule key={index} title={title} subTitle={subTitle}>
           <div dangerouslySetInnerHTML={{ __html: description }} />
         </CardModule>
       ))}

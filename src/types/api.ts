@@ -8,6 +8,7 @@ export type LandingPageProps = PricingBoxProps & {
   sectionAgenda: SectionAgendaProps;
   sectionAboutUs: SectionAboutUsProps;
   sectionReviews: SectionReviewsProps;
+  sectionFaq: SectionFaqProps;
 };
 
 export type LogoProps = {
@@ -93,5 +94,13 @@ export type SectionReviewsProps = {
     name: string;
     text: string;
     photo: LogoProps;
+  }[];
+};
+
+export type SectionFaqProps = {
+  title: string;
+  questions: {
+    question: string;
+    answer: string;
   }[];
 };

@@ -1,4 +1,4 @@
-export type LandingPageProps = {
+export type LandingPageProps = PricingBoxProps & {
   logo: LogoProps;
   header: HeaderProps;
   sectionAboutProject: SectionAboutProjectProps;
@@ -60,4 +60,12 @@ export type SectionModulesProps = {
 export type SectionAgendaProps = {
   title: string;
   description: string;
+};
+
+export type PricingBoxProps = {
+  totalPrice: number;
+  numberInstallments: number;
+  priceInstallment: number;
+  button: ButtonProps;
+  benefits: string;
 };

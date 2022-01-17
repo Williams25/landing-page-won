@@ -81,6 +81,7 @@ export const GET_LANDING_PAGE = /* GraphQL */ `
     totalPrice
     numberInstallments
     priceInstallment
+    benefits
     button {
       ...button
     }
@@ -95,6 +96,7 @@ export const GET_LANDING_PAGE = /* GraphQL */ `
       ...sectionConcepts
       ...sectionModules
       ...sectionAgenda
+      ...pricingBox
     }
   }
 `;

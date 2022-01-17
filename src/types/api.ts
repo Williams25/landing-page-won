@@ -6,6 +6,7 @@ export type LandingPageProps = PricingBoxProps & {
   sectionConcepts: SectionConceptsProps;
   sectionModules: SectionModulesProps;
   sectionAgenda: SectionAgendaProps;
+  sectionAboutUs: SectionAboutUsProps;
 };
 
 export type LogoProps = {
@@ -68,4 +69,19 @@ export type PricingBoxProps = {
   priceInstallment: number;
   button: ButtonProps;
   benefits: string;
+};
+
+export type SectionAboutUsProps = {
+  title: string;
+  authors: {
+    name: string;
+    role: string;
+
+    description: string;
+    photo: LogoProps;
+    socialLinks: {
+      title: string;
+      url: string;
+    };
+  }[];
 };

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ResizeObserver from "resize-observer-polyfill";
-
+import { useImage } from "../../hooks/useImage";
 import * as S from "./styles";
 
 type Props = {
@@ -11,6 +11,8 @@ type Props = {
 };
 
 const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
+  const { handleLoadImage } = useImage();
+
   useEffect(() => {
     const texts = document.querySelectorAll("p.description");
 
@@ -31,19 +33,9 @@ const ReviewCard: React.FC<Props> = ({ id, name, image, description }) => {
     <S.Card>
       <S.User>
         <S.Image>
-          <source
-            srcSet={require(`../../images/reviews/${image}?webp`)}
-            type="image/webp"
-          />
-          <source
-            srcSet={require(`../../images/reviews/${image}`)}
-            type="image/jpg"
-          />
-          <img
-            src={require(`../../images/reviews/${image}`)}
-            loading="lazy"
-            alt={name}
-          />
+          <source srcSet={handleLoadImage(image)} type="image/webp" />
+          <source srcSet={handleLoadImage(image)} type="image/jpg" />
+          <img src={handleLoadImage(image)} loading="lazy" alt={name} />
         </S.Image>
         <S.Name>{name}</S.Name>
       </S.User>
